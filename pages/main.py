@@ -164,7 +164,7 @@ layout = html.Div([
     dcc.Graph(id="comparison-chart", style={"marginBottom": "40px"}),
 
     html.H5("Comparison of Test MSE for Ensemble, FCNN, and GNN"),
-    dcc.Graph(figure=fig, style={"marginBottom": "40px"}),
+    dcc.Graph(figure=fig, style={"marginBottom": "40px"}), 
 
     html.H5("ORCA vs Stacking Ensemble — Computational Efficiency and Accuracy"),
     dcc.Graph(figure=time_fig),
