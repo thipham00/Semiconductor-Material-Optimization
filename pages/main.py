@@ -95,7 +95,7 @@ layout = html.Div([
     html.Div([
         html.Div([
             html.Div([
-                html.Img(src="/assets/orca.png", style={"height": "80px", "marginBottom": "15px"}),
+                html.Img(src="/assets/orca-logo.png", style={"height": "80px", "marginBottom": "15px"}),
                 html.P("Used for high-accuracy quantum chemistry calculations, ORCA helped us generate band gap values through DFT simulations.",
                        style={"color": "#444"}),
                 html.A("Visit ORCA Website →", href="https://orcaforum.kofo.mpg.de/", target="_blank",
@@ -105,7 +105,7 @@ layout = html.Div([
                 "borderRadius": "12px", "boxShadow": "0 4px 12px rgba(0, 0, 0, 0.08)", "width": "100%"
             }),
             html.Div([
-                html.Img(src="/assets/mp.png", style={"height": "80px", "marginBottom": "15px"}),
+                html.Img(src="/assets/mp-logo.png", style={"height": "80px", "marginBottom": "15px"}),
                 html.P("Our core dataset came from the Materials Project API, including structural and atomic information on thousands of materials.",
                        style={"color": "#444"}),
                 html.A("Visit Materials Project Website→", href="https://materialsproject.org/", target="_blank",
@@ -164,7 +164,7 @@ layout = html.Div([
     dcc.Graph(id="comparison-chart", style={"marginBottom": "40px"}),
 
     html.H5("Comparison of Test MSE for Ensemble, FCNN, and GNN"),
-    dcc.Graph(figure=fig, style={"marginBottom": "40px"}), 
+    dcc.Graph(figure=fig, style={"marginBottom": "40px"}),
 
     html.H5("ORCA vs Stacking Ensemble — Computational Efficiency and Accuracy"),
     dcc.Graph(figure=time_fig),

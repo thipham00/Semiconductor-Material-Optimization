@@ -78,9 +78,9 @@ layout = html.Div([
     ]),
 
     html.P("Before cleaning:"),
-    html.Img(src="/assets/before-clean.png", style={"display": "block", "margin": "0 auto", "maxWidth": "1000px", "marginBottom": "40px"}),
-    html.P("Afrer cleaning:"),
-    html.Img(src="/assets/after-clean.png", style={"display": "block", "margin": "0 auto", "maxWidth": "1000px", "marginBottom": "40px"}),
+    html.Img(src="/assets/before-cleaning.png", style={"display": "block", "margin": "0 auto", "maxWidth": "1000px", "marginBottom": "40px"}),
+    html.P("After cleaning:"),
+    html.Img(src="/assets/after-cleaning.png", style={"display": "block", "margin": "0 auto", "maxWidth": "1000px", "marginBottom": "40px"}),
 
     html.H3("Models Training & Comparison", style={"color": "#074185"}),
     html.P("We tested a variety of models to figure out which one could best predict band gaps in semiconductor materials. Our process included everything from simple models to more advanced deep learning methods."),
@@ -185,7 +185,7 @@ layout = html.Div([
                 "This means the dataset has a lot of low-bandgap materials (like metals or semiconductors) and a few with very high gaps (likely insulators). ",
                 "Because of the skewed distribution, it might help to normalize or transform the band gap values before feeding them into a machine learning model."
             ]),
-            html.Img(src="/assets/bandgap.png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px", "marginBottom": "40px"})
+            html.Img(src="/assets/bandgap-distribution.png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px", "marginBottom": "40px"})
         ]),
         html.Div([
             html.H5("Feature Correlation Heatmap"),
@@ -224,7 +224,7 @@ layout = html.Div([
                 html.Em("symmetry-based descriptors alone may not be strong predictors"),
                 " unless paired with other structural details."
             ]),
-            html.Img(src="/assets/corr-heatmap.png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px", "marginBottom": "40px"})
+            html.Img(src="/assets/correlation-heatmap.png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px", "marginBottom": "40px"})
         ]),
         html.Div([
             html.H5("Feature Correlation with Band Gap"),
@@ -247,7 +247,7 @@ layout = html.Div([
                 html.Em("Crystal system"), " and ", html.Em("space group number"),
                 " exhibit weak correlations, suggesting that symmetry alone is not a strong predictor of band gap and may need to be combined with other descriptors to be useful."
             ]),
-            html.Img(src="/assets/features-corr-w-bandgap.png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px" , "marginBottom": "40px"})
+            html.Img(src="/assets/features-correlation-w-bandgap.png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px" , "marginBottom": "40px"})
         ]),
         html.Div([
             html.H5("True vs. Predicted Band Gaps (Random Forest)"),
@@ -269,7 +269,7 @@ layout = html.Div([
                 "However, the spread in residuals increases as the true band gap gets larger, suggesting some difficulty in predicting wide band gaps accurately."
             ]),
             html.P("This residual-based visualization helps pinpoint where the model struggles — particularly in the high-gap region — and can guide future improvements in feature engineering or model tuning."),
-            html.Img(src="/assets/true vs predicted (RF).png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px"})
+            html.Img(src="/assets/true-predicted (RF).png", style={"display": "block", "margin": "0 auto", "maxWidth": "700px"})
         ])
     ]),
 ], style={"padding": "2rem"})
