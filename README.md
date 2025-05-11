@@ -6,13 +6,12 @@ This project uses machine learning (ML) and deep learning (DL) techniques to pre
 
 ## Setup Instructions
 ### 1. Clone the Repository
-- git clone https://github.com/thipham00/Semiconductor-Material-Optimization.git
-- cd semiconductor-material-optimization
+git clone https://github.com/thipham00/Semiconductor-Material-Optimization.git  
+cd semiconductor-material-optimization
 
 ### 2. Create a Virtual Environment (optional)
-python -m venv venv
-
-source venv/bin/activate     # On Windows: venv\Scripts\activate
+python -m venv venv  
+source venv/bin/activate             # On Windows: venv\Scripts\activate
 
 ### 3. Install Required Packages (Make sure to have Python 3.8+ installed.)
 pip install -r requirements.txt
@@ -78,5 +77,5 @@ pip install -r requirements.txt
 https://carbon-caster-451220-t5.uc.r.appspot.com/
 
 ## Contributors
-Thi Dao Nguyen Pham — thidaonguyen.pham@gmail.com
+Thi Dao Nguyen Pham — thidaonguyen.pham@gmail.com  
 Jewon Yeon — yeon971105@gmail.com
