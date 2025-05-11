@@ -6,29 +6,29 @@ This project uses machine learning (ML) and deep learning (DL) techniques to pre
 
 ## Setup Instructions
 ### 1. Clone the Repository
-
-git clone https://github.com/thipham00/Semiconductor-Material-Optimization.git
-cd semiconductor-material-optimization
+- git clone https://github.com/thipham00/Semiconductor-Material-Optimization.git
+- cd semiconductor-material-optimization
 
 ### 2. Create a Virtual Environment (optional)
 python -m venv venv
+
 source venv/bin/activate     # On Windows: venv\Scripts\activate
 
 ### 3. Install Required Packages (Make sure to have Python 3.8+ installed.)
 pip install -r requirements.txt
 
 ## Project Pipeline Overview
-[1] Data Collection
-↓
-[2] Data Cleaning & Feature Engineering
-↓
-[3] Model Training (ML & GNNs)
-↓
-[4] Model Evaluation (MSE, RMSE, R²)
-↓
-[5] Visualization & Analysis
-↓
-[6] Dashboard Deployment
+[1] Data Collection  
+↓  
+[2] Data Cleaning & Feature Engineering  
+↓  
+[3] Model Training (ML & GNNs)  
+↓  
+[4] Model Evaluation (MSE, RMSE, R²)  
+↓  
+[5] Visualization & Analysis  
+↓  
+[6] Dashboard Deployment  
 
 #### Step 1: Data Collection
 - Materials Project API: Used to extract structural and atomic data (e.g., crystal system, space group, density, formula).
