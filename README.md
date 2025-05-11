@@ -59,7 +59,20 @@ pip install -r requirements.txt
 - Organized into modular pages with interactive graphs
 
 ## Repository Structure
-<pre> ```bash semiconductor-material-optimization/ │ ├── app.py # Main Dash app launcher ├── assets/ # CSS, logos, custom visuals ├── pages/ # Modular Dash page layouts │ ├── home.py # Homepage overview │ ├── objective.py # Project goals and data sources │ ├── methods.py # Data processing and modeling │ ├── findings.py # Results and analysis │ └── conclusion.py # Summary and future directions │ ├── models/ # Model training scripts │ ├── random_forest.py │ ├── xgboost_model.py │ ├── fcnn.py │ └── gnn_model.py │ ├── data/ # Raw and processed datasets │ ├── raw/ # Original Materials Project / ORCA output │ └── processed/ # Clean, ML-ready datasets │ ├── notebooks/ # Jupyter notebooks for EDA │ └── eda.ipynb │ ├── utils/ # Helper functions (e.g., feature engineering) ├── requirements.txt # Python dependencies └── README.md # Project documentation (this file) ``` </pre>
+- app.py — Main Dash app launcher
+- assets/ — Custom CSS, logos, and charts
+- pages/ — Modular Dash app pages:
+  - main.py — Homepage with project overview
+  - objective.py — Project goals and data sources
+  - methods.py — Data processing and modeling
+  - findings.py — Model results and visualizations
+- data/ — Datasets
+- .gcloudignore: Ignore rules for GCP
+- app.yaml: Configuration file for deploying
+- LICENSE : license page
+- requirements.txt — All Python dependencies
+- README.md — Project documentation (this file)
+
 
 ## Website
 https://carbon-caster-451220-t5.uc.r.appspot.com/
