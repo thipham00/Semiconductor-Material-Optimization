@@ -251,7 +251,11 @@ layout = html.Div([
                "integrate more detailed graph-based representations for GNNs. There's also room to improve the interpretability of our models by looking more closely at which features "
                "are driving predictions."),
 
-        html.P("Overall, this project highlights how AI can support — and even help scale — scientific research, making it faster, more efficient, and more accessible.")
-    ]),
-
+        html.P([
+            "Overall, this project highlights how AI can support — and even help scale — scientific research, making it faster, more efficient, and more accessible. ",
+            "Recent research by Liu et al. (2023) reinforces this direction: they achieved high-accuracy band gap prediction using ML, with ",
+            html.B("MAE = 0.142 eV"), " and ", html.B("R² = 0.977"), ", across a dataset of over 53,000 materials using only atomic and structural descriptors. ",
+            "Their results confirm the feasibility of ML-based screening for thousands of compounds — further validating the practical potential of our approach."
+        ])
+    ])
 ], style={"padding": "2rem"})

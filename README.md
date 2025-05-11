@@ -72,9 +72,13 @@ pip install -r requirements.txt
 - requirements.txt — All Python dependencies
 - README.md — Project documentation (this file)
 
-
 ## Website
 https://carbon-caster-451220-t5.uc.r.appspot.com/
+
+## References
+- 🔗 [Liu et al., 2023 – Accurate prediction of semiconductor bandgaps using ML](https://doi.org/10.1016/j.mtcomm.2023.106578)  
+  *Materials Today Communications, Volume 36, August 2023, Article 106578*
+
 
 ## Contributors
 Thi Dao Nguyen Pham — thidaonguyen.pham@gmail.com  
