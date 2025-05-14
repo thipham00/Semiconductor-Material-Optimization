@@ -6,15 +6,30 @@ This project uses machine learning (ML) and deep learning (DL) techniques to pre
 
 ## Setup Instructions
 ### 1. Clone the Repository
+```
 git clone https://github.com/thipham00/Semiconductor-Material-Optimization.git  
 cd semiconductor-material-optimization
+```  
 
 ### 2. Create a Virtual Environment (optional)
+``` 
 python -m venv venv  
-source venv/bin/activate             # On Windows: venv\Scripts\activate
-
+source venv/bin/activate             #On Windows: venv\Scripts\activate
+```  
 ### 3. Install Required Packages (Make sure to have Python 3.8+ installed.)
-pip install -r requirements.txt
+Run the following command to install the required packages:  
+```pip install -r requirements.txt```  
+
+
+Or manually install the following packages:  
+- scikit-learn  
+- xgboost  
+- pandas  
+- numpy  
+- matplotlib  
+- seaborn  
+- networkx  
+- pytorch  
 
 ## Project Pipeline Overview
 [1] Data Collection  
@@ -58,20 +73,34 @@ pip install -r requirements.txt
 - Organized into modular pages with interactive graphs
 
 ## Repository Structure
-- app.py — Main Dash app launcher
-- assets/ — Custom CSS, logos, and charts
-- pages/ — Modular Dash app pages:
-  - main.py — Homepage with project overview
-  - objective.py — Project goals and data sources
-  - methods.py — Data processing and modeling
-  - findings.py — Model results and visualizations
-- data/ — Datasets
-- .gcloudignore: Ignore rules for GCP
-- app.yaml: Configuration file for deploying
-- LICENSE : license page
-- requirements.txt — All Python dependencies
-- README.md — Project documentation (this file)
-
+```
+.
+├── app.py             #Main Dash app launcher
+├── app.yaml           #Configuration file (e.g., for deployment)
+├── assets             #Folder containing images, CSS, and other static files
+│   ├── after-cleaning.png
+│   ├── bandgap-distribution.png
+│   ├── before-cleaning.png
+│   ├── correlation-heatmap.png
+│   ├── features-correlation-w-bandgap.png
+│   ├── mp-logo.png
+│   ├── orca-logo.png
+│   ├── styles.css
+│   └── true-predicted (RF).png
+├── data               #Datasets
+│   ├── mp_summary_selected_columns.csv
+│   └── mp_summary_with_weighted_atomic_properties.csv
+├── LICENSE            #License page
+├── notebooks          #Jupyter notebooks used for data exploration/analysis/training models
+│   └── cs163 (1).ipynb
+├── pages              #Modular Dash app pages
+│   ├── findings.py    #Model results and visualizations
+│   ├── main.py        #Homepage with project overview
+│   ├── methods.py     #Data processing, modeling, and methods used in the project
+│   └── objective.py   #Project goals and data sources
+├── README.md          #Project documentation
+└── requirements.txt   #All Python dependencies for the project
+```
 ## Website
 https://carbon-caster-451220-t5.uc.r.appspot.com/
 
